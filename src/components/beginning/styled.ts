@@ -9,7 +9,9 @@ export const Section = styled.section`
   align-items: center;
   flex-wrap: wrap;
   @media (max-width: 768px) {
-    padding: 4.8rem;
+    padding-top: 4.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 `;
 
@@ -107,7 +109,6 @@ export const Description = styled.p`
   line-height: 1.5;
 
   @media (max-width: 768px) {
-    max-width: 90%;
     text-align: justify;
     line-height: 1.5;
   }

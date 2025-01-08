@@ -58,7 +58,7 @@ const ContactMe: React.FC = () => {
   return (
     <S.ContactMeContainer>
       <S.Title>
-        <S.Span>Fale </S.Span>Comigo
+        Entre em <S.Span>Contato </S.Span>
       </S.Title>
       <S.Description>
         Punya ide project untuk dikerjakan bersama-sama? Ayoo hubungi saya di
