@@ -4,8 +4,8 @@ import aboutMeImg from "../../assets/aboutMeImg.svg";
 const AboutMe: React.FC = () => {
   return (
     <>
-      <S.AboutMeContainer >
-        <S.AboutImg src={aboutMeImg} />
+      <S.AboutMeContainer>
+        <S.AboutImg src={aboutMeImg} alt="about-me" />
         <S.AboutContentTexts>
           <S.Title>
             Sobre <S.Span>mim</S.Span>

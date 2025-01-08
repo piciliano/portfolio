@@ -5,7 +5,7 @@ import prime from "../../assets/PrimeFlix.png";
 const MyProjects: React.FC = () => {
   return (
     <>
-      <S.MyProjectContainer >
+      <S.MyProjectContainer>
         <S.Title>
           <S.Span>Meus </S.Span>Projetos
         </S.Title>
@@ -15,10 +15,10 @@ const MyProjects: React.FC = () => {
         </S.Description>
         <S.ContainerProjects>
           <S.ImgContent>
-            <S.Img src={cripto} />
+            <S.Img src={cripto} alt="criptoImg" />
           </S.ImgContent>
           <S.ImgContent>
-            <S.Img src={prime} />
+            <S.Img src={prime} alt="primeflix" />
           </S.ImgContent>
         </S.ContainerProjects>
       </S.MyProjectContainer>
