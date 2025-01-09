@@ -36,56 +36,17 @@ export const NavItem = styled.li`
       cursor: pointer;
       display: inline-block;
       transition: transform 0.3s, filter 0.3s;
-      filter: blur(2px);
-      font-size: 0.6rem;
+      font-size: 1rem;
+    }
+    @media (max-width: 370px) {
+      font-size: 0.8rem;
     }
   }
+`;
 
-  a:hover {
-    transform: scale(2);
-    filter: blur(0);
-  }
-  @media (max-width: 768px) {
-    @keyframes zoomBlurFocus {
-      0% {
-        transform: scale(1);
-        filter: blur(2px);
-        font-size: 0.6rem;
-      }
-      50% {
-        transform: scale(1.2);
-        filter: blur(0);
-        font-size: 0.8rem;
-      }
-      100% {
-        transform: scale(1);
-        filter: blur(2px);
-      }
-    }
-  }
-
-  @media (max-width: 360px) {
-    @keyframes zoomBlurFocus {
-      0% {
-        transform: scale(1);
-        filter: blur(2px);
-        font-size: 0.4rem;
-      }
-      50% {
-        transform: scale(1.2);
-        filter: blur(0);
-        font-size: 0.5rem;
-      }
-      100% {
-        transform: scale(1);
-        filter: blur(2px);
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    a {
-      animation: zoomBlurFocus 6s infinite ease-in-out;
-    }
-  }
+export const Span = styled.span`
+  color: ${(props) => props.theme.colors.secondary};
+`;
+export const SpanHastag = styled.span`
+  color: ${(props) => props.theme.colors.hastag};
 `;
