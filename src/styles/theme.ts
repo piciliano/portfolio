@@ -13,4 +13,17 @@ const theme = {
   },
 };
 
+export const toggleTheme = (value: boolean) => {
+  if (value) {
+    theme.colors.text = "#000000";
+    theme.colors.background = "#ffffff";
+  } else {
+    theme.colors.text = "#f5f5f5";
+    theme.colors.background = "#141819";
+  }
+};
+
+toggleTheme(false);  
+
+
 export default theme;
