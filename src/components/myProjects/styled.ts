@@ -9,8 +9,8 @@ export const MyProjectContainer = styled.section`
   align-items: center;
 
   @media (max-width: 768px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
   }
 `;
 
@@ -24,20 +24,23 @@ export const Description = styled.p`
   padding-bottom: 2rem;
   text-align: justify;
   line-height: 1.5;
+  color: ${(props) => props.theme.colors.text};
 
   @media (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
     max-width: 90%;
-    text-align: center;
+    text-align: justify;
+    word-spacing: normal;
+    hyphens: auto;
   }
 `;
 
-
 export const Title = styled.h2`
   padding-bottom: 2rem;
+  color: ${(props) => props.theme.colors.text};
 
   @media (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 

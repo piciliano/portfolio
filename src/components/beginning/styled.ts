@@ -43,6 +43,7 @@ export const BeginningProfile = styled.div`
 
 export const Title = styled.h1`
   padding-bottom: 0.5rem;
+  color: ${(props) => props.theme.colors.text};
 
   @media (max-width: 768px) {
     font-size: 2rem;
@@ -107,10 +108,14 @@ export const Description = styled.p`
   padding-bottom: 2rem;
   text-align: justify;
   line-height: 1.5;
+  color: ${(props) => props.theme.colors.text};
 
   @media (max-width: 768px) {
     text-align: justify;
     line-height: 1.5;
+    font-size: 1.1rem;
+    word-spacing: normal;
+    hyphens: auto;
   }
 `;
 

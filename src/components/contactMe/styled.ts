@@ -10,7 +10,7 @@ export const ContactMeContainer = styled.section`
 
   @media (max-width: 768px) {
     padding: 0.5rem;
-    width: 90%;
+    width: 93%;
     margin: auto;
   }
 `;
@@ -18,9 +18,10 @@ export const ContactMeContainer = styled.section`
 export const Title = styled.h1`
   padding-bottom: 2rem;
   font-size: 2rem;
+  color: ${(props) => props.theme.colors.text};
 
   @media (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 
@@ -28,18 +29,19 @@ export const Description = styled.p`
   text-align: center;
   max-width: 50rem;
   padding-bottom: 2rem;
+  color: ${(props) => props.theme.colors.text};
 
   @media (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     max-width: 90%;
     text-align: center;
     line-height: 1.5;
   }
 
   @media (max-width: 480px) {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     max-width: 90%;
-    text-align: center;
+    text-align: justify;
     line-height: 1.5;
   }
 `;
