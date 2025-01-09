@@ -30,6 +30,9 @@ export const Description = styled.p`
   max-width: 50rem;
   padding-bottom: 2rem;
   color: ${(props) => props.theme.colors.text};
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.5;
 
   @media (max-width: 768px) {
     font-size: 1.2rem;
@@ -39,13 +42,6 @@ export const Description = styled.p`
     word-spacing: normal;
     line-height: 1.5;
     hyphens: auto;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.1rem;
-    max-width: 90%;
-    text-align: justify;
-    line-height: 1.5;
   }
 `;
 
