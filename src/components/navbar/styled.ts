@@ -29,35 +29,38 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
   a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-block;
-    transition: transform 0.3s, filter 0.3s;
-    filter: blur(2px);
-    font-size: 0.6rem;
+    @media (max-width: 768px) {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-block;
+      transition: transform 0.3s, filter 0.3s;
+      filter: blur(2px);
+      font-size: 0.6rem;
+    }
   }
 
   a:hover {
     transform: scale(2);
     filter: blur(0);
   }
-
-  @keyframes zoomBlurFocus {
-    0% {
-      transform: scale(1);
-      filter: blur(2px);
-      font-size: 0.6rem;
-    }
-    50% {
-      transform: scale(1.2);
-      filter: blur(0);
-      font-size: 0.8rem;
-    }
-    100% {
-      transform: scale(1);
-      filter: blur(2px);
+  @media (max-width: 768px) {
+    @keyframes zoomBlurFocus {
+      0% {
+        transform: scale(1);
+        filter: blur(2px);
+        font-size: 0.6rem;
+      }
+      50% {
+        transform: scale(1.2);
+        filter: blur(0);
+        font-size: 0.8rem;
+      }
+      100% {
+        transform: scale(1);
+        filter: blur(2px);
+      }
     }
   }
 
