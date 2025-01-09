@@ -51,7 +51,9 @@ export const Description = styled.p`
     font-size: 1.2rem;
     max-width: 90%;
     text-align: justify;
-    word-spacing: .05em;
+    text-justify: inter-word;
+    word-spacing: normal;
+    line-height: 1.5;
     hyphens: auto;
   }
 `;

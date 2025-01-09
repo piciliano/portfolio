@@ -61,8 +61,9 @@ const ContactMe: React.FC = () => {
         Entre em <S.Span>Contato </S.Span>
       </S.Title>
       <S.Description>
-        Punya ide project untuk dikerjakan bersama-sama? Ayoo hubungi saya di
-        bawah ini!
+        Preencha o formulário abaixo com seus dados e uma breve mensagem sobre o
+        seu projeto ou ideia. Estou sempre aberto a novas colaborações e
+        adoraria saber mais sobre como podemos trabalhar juntos!
       </S.Description>
       <S.DivForm>
         <S.FormContainer>

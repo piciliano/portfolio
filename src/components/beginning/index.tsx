@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 const Beginning: React.FC = () => {
   return (
     <>
-      <S.Section >
+      <S.Section>
         <S.BeginningContent>
           <S.Title>Olá, Meu Nome é Neto</S.Title>
           <S.SubTitle>Desenvolvedor Fullstack</S.SubTitle>
@@ -23,7 +23,15 @@ const Beginning: React.FC = () => {
             soluções com performance otimizada e design intuitivo.
           </S.Description>
           <S.ContainerButtons>
-            <S.Button>Contato</S.Button>
+            <S.Button
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Contato
+            </S.Button>
             <S.LinkButtons>
               <SocialIcon
                 url="https://github.com/piciliano"

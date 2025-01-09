@@ -11,16 +11,17 @@ const AboutMe: React.FC = () => {
             Sobre <S.Span>mim</S.Span>
           </S.Title>
           <S.Description>
-            Selamat datang di portofolio web saya! Saya Bayu Weda, seorang
-            front-end website developer dengan hasrat untuk menciptakan
-            pengalaman web yang menarik dan responsif. Dengan keahlian dalam
-            HTML, CSS, dan JavaScript, saya fokus pada desain yang estetis dan
-            performa yang optimal. Jelajahi berbagai proyek saya di sini, yang
-            mencakup desain responsif dan interaktivitas yang menawan. Saya
-            percaya bahwa setiap klik harus membawa pengguna lebih dekat dengan
-            tujuan bisnis. Saya senang berkolaborasi dan membawa ide-ide kreatif
-            menjadi kenyataan. Mari diskusikan bagaimana saya dapat membantu
-            Anda mencapai visi online Anda. Terima kasih atas kunjungan Anda!
+            Sou um desenvolvedor fullstack apaixonado por criar experiências web
+            atraentes, responsivas e marcantes. Com habilidades essenciais, meu
+            foco está em desenvolver designs estéticos, com alta performance e
+            interatividade envolvente. Cada projeto que realizo reflete meu
+            compromisso com os detalhes e a experiência do usuário. Explore meu
+            portfólio para descobrir alguns dos trabalhos que já concluí,
+            incluindo designs responsivos e soluções web inovadoras. Acredito
+            que cada clique deve aproximar os usuários dos objetivos do negócio.
+            Estou sempre aberto a colaborações e adoraria ajudar a transformar
+            suas ideias criativas em realidade. Vamos conversar sobre como posso
+            contribuir para realizar sua visão online. Obrigado pela sua visita!
           </S.Description>
         </S.AboutContentTexts>
       </S.AboutMeContainer>

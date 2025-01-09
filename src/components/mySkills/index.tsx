@@ -21,13 +21,16 @@ import {
 
 const MySkill: React.FC = () => {
   return (
-    <S.MySkillContainer >
+    <S.MySkillContainer>
       <S.Title>
         Minhas <S.Span>Skills</S.Span>
       </S.Title>
       <S.Description>
-        Estas são as habilidades e ferramentas que venho aprendendo e utilizando
-        no meu percurso como desenvolvedor web fullstack.
+        Estas são as habilidades e ferramentas que tenho desenvolvido ao longo
+        da minha jornada como desenvolvedor web fullstack. Cada tecnologia
+        representa um passo no meu aprendizado e evolução, desde a criação de
+        interfaces modernas e responsivas até a implementação de sistemas
+        robustos
       </S.Description>
       <S.Carousel>
         <S.SkillIcons>

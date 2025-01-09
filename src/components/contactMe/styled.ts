@@ -32,10 +32,13 @@ export const Description = styled.p`
   color: ${(props) => props.theme.colors.text};
 
   @media (max-width: 768px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     max-width: 90%;
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: normal;
     line-height: 1.5;
+    hyphens: auto;
   }
 
   @media (max-width: 480px) {
