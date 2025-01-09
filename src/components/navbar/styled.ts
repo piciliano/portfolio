@@ -30,7 +30,7 @@ export const NavList = styled.ul`
 export const NavItem = styled.li`
   a {
     @media (max-width: 768px) {
-      text-decoration: underline;
+      text-decoration: none;
       color: white;
       font-weight: bold;
       cursor: pointer;
