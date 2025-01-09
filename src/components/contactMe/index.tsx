@@ -3,16 +3,26 @@ import * as S from "./styled";
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import { contactFormSchema, ContactFormData } from "./validationSchema";
+import toast, { Toaster } from "react-hot-toast";
 
 const validateForm = (data: ContactFormData) => {
   try {
+    const allFieldsEmpty = Object.values(data).every(
+      (value) => value.trim() === ""
+    );
+    if (allFieldsEmpty) {
+      toast.dismiss();
+      toast.error("Por favor, insira seus dados antes de enviar.");
+      return false;
+    }
+
     contactFormSchema.parse(data);
-    console.log("Formulário enviado com sucesso!");
     return true;
   } catch (error) {
     if (error instanceof z.ZodError) {
+      toast.dismiss();
       error.errors.forEach((err) => {
-        console.error(err.message);
+        toast.error(err.message);
       });
     }
     return false;
@@ -20,6 +30,7 @@ const validateForm = (data: ContactFormData) => {
 };
 
 const ContactMe: React.FC = () => {
+  const [isDisabled, setIsDisabled] = useState(false);
   const [formData, setFormData] = useState<ContactFormData>({
     firstName: "",
     lastName: "",
@@ -30,6 +41,9 @@ const ContactMe: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    setIsDisabled(true);
+
     if (validateForm(formData)) {
       try {
         await emailjs.send(
@@ -38,10 +52,24 @@ const ContactMe: React.FC = () => {
           formData,
           "ZR2Ph7JKu_okX-uFT"
         );
-        console.log("Email enviado com sucesso!");
+
+        toast.success("Mensagem enviada com sucesso!");
+
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
       } catch (error) {
-        console.log(error);
+        toast.error("Erro ao enviar mensagem. Tente novamente.");
+        console.error("Erro ao enviar mensagem:", error);
+      } finally {
+        setIsDisabled(false);
       }
+    } else {
+      setIsDisabled(false);
     }
   };
 
@@ -57,6 +85,7 @@ const ContactMe: React.FC = () => {
 
   return (
     <S.ContactMeContainer>
+      <Toaster position="top-right" reverseOrder={false} />
       <S.Title>
         Entre em <S.Span>Contato </S.Span>
       </S.Title>
@@ -109,7 +138,9 @@ const ContactMe: React.FC = () => {
                 placeholder="Mensagem"
               />
             </S.Row>
-            <S.SubmitButton type="submit">Enviar</S.SubmitButton>
+            <S.SubmitButton disabled={isDisabled} type="submit">
+              {isDisabled ? "Enviando..." : "Enviar"}
+            </S.SubmitButton>
           </S.Form>
         </S.FormContainer>
       </S.DivForm>

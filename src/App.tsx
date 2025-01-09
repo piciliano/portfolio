@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import AboutMe from "./components/aboutMe";
 import Beginning from "./components/beginning";
 import ContactMe from "./components/contactMe";
@@ -19,6 +20,7 @@ function App() {
       <MySkill />
       <Line id="contact" />
       <ContactMe />
+      <Toaster position="top-right" reverseOrder={false} />
     </>
   );
 }
