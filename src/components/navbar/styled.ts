@@ -8,6 +8,7 @@ export const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.7);
+  align-items: center;
 
   @media (max-width: 768px) {
     box-shadow: none;
@@ -15,7 +16,14 @@ export const NavbarContainer = styled.nav`
   }
 `;
 
-export const Title = styled.p`
+export const Logo = styled.div`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 768px) {
     display: none;
   }
@@ -49,4 +57,9 @@ export const Span = styled.span`
 `;
 export const SpanHashtag = styled.span`
   color: ${(props) => props.theme.colors.hashtag};
+`;
+
+export const ImgLogo = styled.img`
+  object-fit: cover;
+  width: 100%;
 `;

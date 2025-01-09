@@ -1,4 +1,5 @@
 import * as S from "./styled";
+import Logo from "./../../assets/logo.png";
 
 const Navbar: React.FC = () => {
   const menuItems = [
@@ -11,7 +12,9 @@ const Navbar: React.FC = () => {
 
   return (
     <S.NavbarContainer>
-      <S.Title>Neto Dev</S.Title>
+      <S.Logo>
+        <S.ImgLogo src={Logo} alt="logo" />
+      </S.Logo>
       <S.NavList>
         {menuItems.map((item) => (
           <S.NavItem key={item.id}>
