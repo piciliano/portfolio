@@ -1,54 +1,28 @@
 import * as S from "./styled";
 
 const Navbar: React.FC = () => {
+  const menuItems = [
+    { id: 1, href: "#home", text: "Início" },
+    { id: 2, href: "#about", text: "Sobre" },
+    { id: 3, href: "#projects", text: "Projetos" },
+    { id: 4, href: "#skills", text: "Tecnologias" },
+    { id: 5, href: "#contact", text: "Contato" },
+  ];
+
   return (
     <S.NavbarContainer>
       <S.Title>Neto Dev</S.Title>
       <S.NavList>
-        <S.NavItem>
-          <a href="#home">
-            <S.SpanContainer>
-              <S.SpanHastag>#</S.SpanHastag>
-              <S.Span>Início</S.Span>
-            </S.SpanContainer>
-          </a>
-        </S.NavItem>
-        <S.NavItem>
-          <a href="#about">
-            <S.SpanContainer>
-              <S.SpanHastag>#</S.SpanHastag>
-
-              <S.Span>Sobre</S.Span>
-            </S.SpanContainer>
-          </a>
-        </S.NavItem>
-        <S.NavItem>
-          <a href="#projects">
-            <S.SpanContainer>
-              <S.SpanHastag>#</S.SpanHastag>
-
-              <S.Span>Projetos</S.Span>
-            </S.SpanContainer>
-          </a>
-        </S.NavItem>
-        <S.NavItem>
-          <a href="#skills">
-            <S.SpanContainer>
-              <S.SpanHastag>#</S.SpanHastag>
-
-              <S.Span>Tecnologias</S.Span>
-            </S.SpanContainer>
-          </a>
-        </S.NavItem>
-        <S.NavItem>
-          <a href="#contact">
-            <S.SpanContainer>
-              <S.SpanHastag>#</S.SpanHastag>
-
-              <S.Span>Contato</S.Span>
-            </S.SpanContainer>
-          </a>
-        </S.NavItem>
+        {menuItems.map((item) => (
+          <S.NavItem key={item.id}>
+            <a href={item.href}>
+              <S.Span>
+                <S.SpanHashtag>#</S.SpanHashtag>
+                {item.text}
+              </S.Span>
+            </a>
+          </S.NavItem>
+        ))}
       </S.NavList>
     </S.NavbarContainer>
   );

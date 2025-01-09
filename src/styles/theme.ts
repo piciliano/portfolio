@@ -4,7 +4,7 @@ const theme = {
     secondary: "#00A8CD",
     text: "#f5f5f5",
     background: "#141819",
-    hastag: "#E34F26",
+    hashtag: "#E34F26",
   },
   fonts: {
     primary: "'Roboto', sans-serif",
