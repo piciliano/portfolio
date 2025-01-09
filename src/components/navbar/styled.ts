@@ -30,7 +30,7 @@ export const NavList = styled.ul`
 export const NavItem = styled.li`
   a {
     @media (max-width: 768px) {
-      text-decoration: none;
+      text-decoration: underline;
       color: white;
       font-weight: bold;
       cursor: pointer;
@@ -64,9 +64,28 @@ export const NavItem = styled.li`
     }
   }
 
+  @media (max-width: 360px) {
+    @keyframes zoomBlurFocus {
+      0% {
+        transform: scale(1);
+        filter: blur(2px);
+        font-size: 0.4rem;
+      }
+      50% {
+        transform: scale(1.2);
+        filter: blur(0);
+        font-size: 0.5rem;
+      }
+      100% {
+        transform: scale(1);
+        filter: blur(2px);
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     a {
-      animation: zoomBlurFocus 5s infinite ease-in-out;
+      animation: zoomBlurFocus 6s infinite ease-in-out;
     }
   }
 `;
