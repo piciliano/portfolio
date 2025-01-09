@@ -9,7 +9,7 @@ export const Section = styled.section`
   align-items: center;
   flex-wrap: wrap;
   @media (max-width: 768px) {
-    padding-top: 4.8rem;
+    padding-top: 2.8rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }

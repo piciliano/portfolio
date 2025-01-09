@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
           <a href="#home">Início</a>
         </S.NavItem>
         <S.NavItem>
-          <a href="#about">Sobre Mim</a>
+          <a href="#about">Sobre</a>
         </S.NavItem>
         <S.NavItem>
           <a href="#projects">Projetos</a>
