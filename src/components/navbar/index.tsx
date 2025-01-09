@@ -7,36 +7,46 @@ const Navbar: React.FC = () => {
       <S.NavList>
         <S.NavItem>
           <a href="#home">
-            <S.SpanHastag>#</S.SpanHastag>
-            <S.Span>Início</S.Span>
+            <S.SpanContainer>
+              <S.SpanHastag>#</S.SpanHastag>
+              <S.Span>Início</S.Span>
+            </S.SpanContainer>
           </a>
         </S.NavItem>
         <S.NavItem>
           <a href="#about">
-            <S.SpanHastag>#</S.SpanHastag>
+            <S.SpanContainer>
+              <S.SpanHastag>#</S.SpanHastag>
 
-            <S.Span>Sobre</S.Span>
+              <S.Span>Sobre</S.Span>
+            </S.SpanContainer>
           </a>
         </S.NavItem>
         <S.NavItem>
           <a href="#projects">
-            <S.SpanHastag>#</S.SpanHastag>
+            <S.SpanContainer>
+              <S.SpanHastag>#</S.SpanHastag>
 
-            <S.Span>Projetos</S.Span>
+              <S.Span>Projetos</S.Span>
+            </S.SpanContainer>
           </a>
         </S.NavItem>
         <S.NavItem>
           <a href="#skills">
-            <S.SpanHastag>#</S.SpanHastag>
+            <S.SpanContainer>
+              <S.SpanHastag>#</S.SpanHastag>
 
-            <S.Span>Tecnologias</S.Span>
+              <S.Span>Tecnologias</S.Span>
+            </S.SpanContainer>
           </a>
         </S.NavItem>
         <S.NavItem>
           <a href="#contact">
-            <S.SpanHastag>#</S.SpanHastag>
+            <S.SpanContainer>
+              <S.SpanHastag>#</S.SpanHastag>
 
-            <S.Span>Contato</S.Span>
+              <S.Span>Contato</S.Span>
+            </S.SpanContainer>
           </a>
         </S.NavItem>
       </S.NavList>

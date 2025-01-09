@@ -44,6 +44,14 @@ export const NavItem = styled.li`
   }
 `;
 
+export const SpanContainer = styled.div`
+  display: inline;
+
+  @media (max-width: 768px) {
+    display: inline;
+  }
+`;
+
 export const Span = styled.span`
   color: ${(props) => props.theme.colors.secondary};
 `;
