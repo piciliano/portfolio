@@ -37,7 +37,6 @@ export const AboutImg = styled.img`
   @media (max-width: 768px) {
     width: 80%;
     margin-top: 2rem;
-    padding-left: 2rem;
   }
 `;
 
@@ -49,8 +48,8 @@ export const AboutImgProfile = styled.img`
   object-fit: cover;
   bottom: 2.6rem;
   @media (max-width: 768px) {
-    bottom: 2rem;
-    left: 8.4rem;
+    bottom: 2.2rem;
+    left: 7.8rem;
     width: 10rem;
   }
 `;
