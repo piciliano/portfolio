@@ -37,6 +37,21 @@ export const AboutImg = styled.img`
   @media (max-width: 768px) {
     width: 80%;
     margin-top: 2rem;
+    padding-left: 4rem;
+  }
+`;
+
+export const AboutImgProfile = styled.img`
+  z-index: 1;
+  position: absolute;
+  width: 12rem;
+  left: 5.5rem;
+  object-fit: cover;
+  bottom: 2.6rem;
+  @media (max-width: 768px) {
+    bottom: 1.9rem;
+    left: 9.1rem;
+    width: 10rem;
   }
 `;
 
@@ -62,7 +77,7 @@ export const Description = styled.p`
     text-align: justify;
     line-height: 1.5;
     font-size: 1.1rem;
-    word-spacing: normal; 
+    word-spacing: normal;
     hyphens: auto;
   }
 `;

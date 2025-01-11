@@ -1,11 +1,16 @@
 import * as S from "./styled";
 import aboutMeImg from "../../assets/aboutMeImg.svg";
+import neto from "../../assets/neto.png";
 
 const AboutMe: React.FC = () => {
   return (
     <>
       <S.AboutMeContainer>
-        <S.AboutImg src={aboutMeImg} alt="about-me" />
+        <div style={{ position: "relative", textAlign: "center" }}>
+          <S.AboutImg src={aboutMeImg} alt="about-me" />
+          <S.AboutImgProfile src={neto} alt="neto img" />
+        </div>
+
         <S.AboutContentTexts>
           <S.Title>
             Sobre <S.Span>mim</S.Span>
