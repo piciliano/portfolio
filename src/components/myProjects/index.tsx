@@ -19,10 +19,22 @@ const MyProjects: React.FC = () => {
 
         <S.ContainerProjects>
           <S.ImgContent>
-            <S.Img src={cripto} alt="criptoImg" />
+            <a
+              href="https://cripto-app-flame.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <S.Img src={cripto} alt="criptoImg" />
+            </a>
           </S.ImgContent>
           <S.ImgContent>
-            <S.Img src={prime} alt="primeflix" />
+            <a
+              href="https://prime-flix-zeta-one.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <S.Img src={prime} alt="primeflix" />
+            </a>
           </S.ImgContent>
         </S.ContainerProjects>
       </S.MyProjectContainer>
