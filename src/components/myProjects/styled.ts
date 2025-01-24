@@ -52,7 +52,7 @@ export const ContainerProjects = styled.div`
   align-items: center;
   flex-wrap: wrap;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1260px) {
     justify-content: center;
   }
 `;
