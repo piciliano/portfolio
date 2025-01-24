@@ -2,6 +2,7 @@ import * as S from "./styled";
 import cripto from "../../assets/CriptMoeda.png";
 import prime from "../../assets/PrimeFlix.png";
 import simleToDoListImage from "../../assets/simple-todo-list.png";
+import arnia from "../../assets/arnia.png";
 
 const MyProjects: React.FC = () => {
   return (
@@ -44,6 +45,15 @@ const MyProjects: React.FC = () => {
               rel="noopener noreferrer"
             >
               <S.Img src={simleToDoListImage} alt="toDoList" />
+            </a>
+          </S.ImgContent>
+          <S.ImgContent>
+            <a
+              href="https://github.com/piciliano/ProjetoArnia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <S.Img src={arnia} alt="toDoList" />
             </a>
           </S.ImgContent>
         </S.ContainerProjects>
