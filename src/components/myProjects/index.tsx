@@ -1,6 +1,7 @@
 import * as S from "./styled";
 import cripto from "../../assets/CriptMoeda.png";
 import prime from "../../assets/PrimeFlix.png";
+import simleToDoListImage from "../../assets/simple-todo-list.png";
 
 const MyProjects: React.FC = () => {
   return (
@@ -34,6 +35,15 @@ const MyProjects: React.FC = () => {
               rel="noopener noreferrer"
             >
               <S.Img src={prime} alt="primeflix" />
+            </a>
+          </S.ImgContent>
+          <S.ImgContent>
+            <a
+              href="https://simple-to-do-list-vert.vercel.app//"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <S.Img src={simleToDoListImage} alt="toDoList" />
             </a>
           </S.ImgContent>
         </S.ContainerProjects>
