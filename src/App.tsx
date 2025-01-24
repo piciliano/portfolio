@@ -8,6 +8,7 @@ import MyProjects from "./components/myProjects";
 import MySkill from "./components/mySkills";
 import Navbar from "./components/navbar";
 import React from "react";
+import Footer from "./components/footer";
 
 function App() {
   const sections = [
@@ -15,15 +16,16 @@ function App() {
     { id: "projects", Component: MyProjects },
     { id: "skills", Component: MySkill },
     { id: "contact", Component: ContactMe },
+    { id: "", Component: Footer }, // Último item
   ];
 
   return (
     <>
       <Navbar />
       <Beginning />
-      {sections.map(({ id, Component }) => (
+      {sections.map(({ id, Component }, index) => (
         <React.Fragment key={id}>
-          <Line id={id} />
+          {index < sections.length - 1 && <Line id={id} />}
           <Component />
         </React.Fragment>
       ))}

@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 const SOCIAL_LINKS = [
   { url: "https://github.com/piciliano", color: "#333" },
   { url: "https://www.linkedin.com/in/picilianovasconcelos", color: "#0077b5" },
-  { url: "https://www.instagram.com/SeuPerfil", color: "#E4405F" },
+  { url: "https://www.instagram.com/", color: "#E4405F" },
 ];
 
 const Beginning: React.FC = () => {
