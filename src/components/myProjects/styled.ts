@@ -51,6 +51,7 @@ export const ContainerProjects = styled.div`
   gap: 2rem;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 
   @media (max-width: 1260px) {
     justify-content: center;
