@@ -3,6 +3,7 @@ import cripto from "../../assets/CriptMoeda.png";
 import prime from "../../assets/PrimeFlix.png";
 import simleToDoListImage from "../../assets/simple-todo-list.png";
 import arnia from "../../assets/arnia.png";
+import simpleAlbum from "../../assets/simple-album.png";
 
 const MyProjects: React.FC = () => {
   return (
@@ -54,6 +55,15 @@ const MyProjects: React.FC = () => {
               rel="noopener noreferrer"
             >
               <S.Img src={arnia} alt="toDoList" />
+            </a>
+          </S.ImgContent>
+          <S.ImgContent>
+            <a
+              href="https://simple-album.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <S.Img src={simpleAlbum} alt="simple-album" />
             </a>
           </S.ImgContent>
         </S.ContainerProjects>
